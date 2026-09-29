@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b5ed7" />
+  <meta name="description" content="Formulir resmi pendaftaran kaos kegiatan Pekan Tuli Internasional 2026 DPC Gerkatin Kabupaten Banyuwangi." />
+  <title>Pendaftaran Kaos PTI 2026 | DPC Gerkatin Banyuwangi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <main class="page-shell">
+    <section class="hero-card">
+      <div class="hero-top">
+        <div class="brand-badge">GERKATIN • BANYUWANGI</div>
+        <div class="event-badge">PTI 2026</div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">PENDAFTARAN RESMI</p>
+        <h1>Pemesanan Kaos<br><span>Pekan Tuli Internasional 2026</span></h1>
+        <p class="hero-text">
+          Formulir resmi pemesanan kaos kegiatan. Silakan isi data dengan benar agar proses pendataan,
+          pembayaran, dan distribusi kaos berjalan tertib.
+        </p>
+        <div class="hero-pills">
+          <span>✓ Data tercatat</span>
+          <span>✓ Konfirmasi panitia</span>
+          <span>✓ Pembayaran terdata</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-grid">
+      <article class="info-card">
+        <span class="info-label">Harga Kaos</span>
+        <strong>Mulai Rp75.000</strong>
+        <small>Harga menyesuaikan model & ukuran.</small>
+      </article>
+      <article class="info-card">
+        <span class="info-label">Pendaftaran</span>
+        <strong>Data wajib lengkap</strong>
+        <small>Gunakan nomor WhatsApp yang aktif.</small>
+      </article>
+      <article class="info-card">
+        <span class="info-label">Konfirmasi</span>
+        <strong>Via WhatsApp Panitia</strong>
+        <small>Setelah form dikirim, simpan bukti pembayaran.</small>
+      </article>
+    </section>
+
+    <section class="form-card">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">FORMULIR</p>
+          <h2>Data Pemesan</h2>
+        </div>
+        <div class="required-note"><span>*</span> Wajib diisi</div>
+      </div>
+
+      <form id="shirtForm" novalidate>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="nama">Nama Lengkap <span>*</span></label>
+            <input id="nama" name="nama" type="text" placeholder="Tulis nama lengkap" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="wa">Nomor WhatsApp <span>*</span></label>
+            <input id="wa" name="wa" type="tel" placeholder="Contoh: 081234567890" autocomplete="tel" required />
+          </div>
+
+          <div class="field">
+            <label for="kategori">Kategori Pemesan <span>*</span></label>
+            <select id="kategori" name="kategori" required>
+              <option value="">Pilih kategori</option>
+              <option>Peserta Tuli</option>
+              <option>Panitia</option>
+              <option>Pendamping</option>
+              <option>Umum</option>
+              <option>Organisasi/Lembaga</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="alamat">Alamat <span>*</span></label>
+            <textarea id="alamat" name="alamat" rows="3" placeholder="Alamat lengkap (desa/kelurahan, kecamatan, kabupaten)" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="model">Model Kaos <span>*</span></label>
+            <select id="model" name="model" required>
+              <option value="">Pilih model</option>
+              <option value="Lengan Pendek">Lengan Pendek — Rp75.000</option>
+              <option value="Lengan Panjang">Lengan Panjang — Rp85.000</option>
+              <option value="Lengan Panjang XXXL">Lengan Panjang XXXL — Rp90.000</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="ukuran">Ukuran <span>*</span></label>
+            <select id="ukuran" name="ukuran" required>
+              <option value="">Pilih ukuran</option>
+              <option>XS</option><option>S</option><option>M</option><option>L</option>
+              <option>XL</option><option>XXL</option><option>XXXL</option><option>XXXXL</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="jumlah">Jumlah Kaos <span>*</span></label>
+            <input id="jumlah" name="jumlah" type="number" min="1" max="50" value="1" required />
+          </div>
+
+          <div class="field">
+            <label for="pengambilan">Metode Pengambilan <span>*</span></label>
+            <select id="pengambilan" name="pengambilan" required>
+              <option value="">Pilih metode</option>
+              <option>Ambil di lokasi kegiatan</option>
+              <option>Ambil melalui panitia</option>
+              <option>Pengiriman (atur dengan panitia)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="order-summary">
+          <div>
+            <span>Estimasi total</span>
+            <strong id="totalHarga">Rp75.000</strong>
+          </div>
+          <small id="detailHarga">1 kaos • Lengan Pendek • Ukuran belum dipilih</small>
+        </div>
+
+        <div class="payment-section">
+          <div class="payment-title">
+            <div>
+              <p class="section-kicker">PEMBAYARAN</p>
+              <h3>Data Pembayaran</h3>
+            </div>
+            <span class="optional">Dapat dilengkapi setelah transfer</span>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="metodeBayar">Metode Pembayaran</label>
+              <select id="metodeBayar" name="metodeBayar">
+                <option value="">Pilih metode</option>
+                <option>Transfer Bank</option>
+                <option>Cash/Tunai</option>
+                <option>Belum Bayar</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="statusBayar">Status Pembayaran</label>
+              <select id="statusBayar" name="statusBayar">
+                <option>Belum Bayar</option>
+                <option>Sudah Bayar</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="catatan">Catatan Tambahan</label>
+              <textarea id="catatan" name="catatan" rows="3" placeholder="Contoh: minta digabung dengan pesanan keluarga/organisasi."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="consent-box">
+          <label class="check-row">
+            <input id="setuju" type="checkbox" required />
+            <span>Saya memastikan data yang saya isi benar dan bersedia mengikuti ketentuan pemesanan kaos yang ditetapkan panitia. <b>*</b></span>
+          </label>
+        </div>
+
+        <button class="submit-btn" type="submit">
+          <span>DAFTAR & KIRIM KE WHATSAPP</span>
+          <span class="arrow">→</span>
+        </button>
+        <p class="form-footnote">Setelah tombol ditekan, WhatsApp akan terbuka dengan format pesan pendaftaran yang sudah disiapkan.</p>
+      </form>
+    </section>
+
+    <section class="notice-card">
+      <div class="notice-icon">i</div>
+      <div>
+        <strong>Informasi penting</strong>
+        <p>Pendaftaran melalui GitHub Pages hanya menangani tampilan formulir. Data akan dikirim melalui WhatsApp, bukan disimpan otomatis di GitHub.</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>DPC GERKATIN Kabupaten Banyuwangi</span>
+      <span>•</span>
+      <span>Pekan Tuli Internasional 2026</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
